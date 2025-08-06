@@ -17,3 +17,14 @@ pdm install
 pdm run serve
 ```
 
+## Docker
+# 构建镜像
+```bash
+docker build -t flask-pdm-app .
+```
+
+# 运行容器
+```bash
+docker run -p 5000:5000 flask-pdm-app
+```
+
