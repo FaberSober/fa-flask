@@ -8,6 +8,7 @@ upload_model = api.model('Upload', {
     'filename': fields.String(description='Uploaded file name')
 })
 
+
 @api.route('/recognize')
 class ImageRecognition(Resource):
     @api.expect(api.parser().add_argument('file', location='files', type='file', required=True))
