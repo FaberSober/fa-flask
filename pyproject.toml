@@ -28,4 +28,4 @@ prometheus-flask-exporter = "*"
 
 [tool.pdm.scripts]
 serve = "python main.py"
-prod = "gunicorn -b 0.0.0.0:5001 main:app"
+prod = "gunicorn -b 0.0.0.0:5000 main:app"
