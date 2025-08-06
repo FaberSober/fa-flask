@@ -16,4 +16,4 @@ RUN pdm install --prod
 EXPOSE 5000
 
 # 启动服务
-CMD ["pdm", "run", "serve"]
+CMD ["pdm", "run", "prod"]

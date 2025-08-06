@@ -28,3 +28,8 @@ docker build -t flask-pdm-app .
 docker run -p 5000:5000 flask-pdm-app
 ```
 
+### docker compose
+```bash
+docker-compose up --build
+```
+
