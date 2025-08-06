@@ -33,3 +33,6 @@ docker run -p 5000:5000 flask-pdm-app
 docker-compose up --build
 ```
 
+## 性能追踪
+[prometheus_flask_exporter](https://github.com/rycus86/prometheus_flask_exporter)
+

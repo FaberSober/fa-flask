@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:4710618a1b58132cea50bb3a95c47e7e61688cdc71d3e3206257a6673ba7b341"
+content_hash = "sha256:81f9a6ffae818708d9fbcfa14c4127fab2a556bcaf7c76679bdcef218aa0013f"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
@@ -241,6 +241,31 @@ files = [
     {file = "pillow-11.3.0-cp312-cp312-win_amd64.whl", hash = "sha256:a6444696fce635783440b7f7a9fc24b3ad10a9ea3f0ab66c5905be1c19ccf17d"},
     {file = "pillow-11.3.0-cp312-cp312-win_arm64.whl", hash = "sha256:2aceea54f957dd4448264f9bf40875da0415c83eb85f55069d89c0ed436e3542"},
     {file = "pillow-11.3.0.tar.gz", hash = "sha256:3828ee7586cd0b2091b6209e5ad53e20d0649bbe87164a459d0676e035e8f523"},
+]
+
+[[package]]
+name = "prometheus-client"
+version = "0.22.1"
+requires_python = ">=3.9"
+summary = "Python client for the Prometheus monitoring system."
+groups = ["default"]
+files = [
+    {file = "prometheus_client-0.22.1-py3-none-any.whl", hash = "sha256:cca895342e308174341b2cbf99a56bef291fbc0ef7b9e5412a0f26d653ba7094"},
+    {file = "prometheus_client-0.22.1.tar.gz", hash = "sha256:190f1331e783cf21eb60bca559354e0a4d4378facecf78f5428c39b675d20d28"},
+]
+
+[[package]]
+name = "prometheus-flask-exporter"
+version = "0.23.2"
+summary = "Prometheus metrics exporter for Flask"
+groups = ["default"]
+dependencies = [
+    "flask",
+    "prometheus-client",
+]
+files = [
+    {file = "prometheus_flask_exporter-0.23.2-py3-none-any.whl", hash = "sha256:94922a636d4c1d8b68e1ee605c30a23e9bbb0b21756df8222aa919634871784c"},
+    {file = "prometheus_flask_exporter-0.23.2.tar.gz", hash = "sha256:41fc9bbd7d48cc958ed8384aacf60c3621d9e903768be61c4e7f0c63872eaf1a"},
 ]
 
 [[package]]
