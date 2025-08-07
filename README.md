@@ -55,4 +55,5 @@ docker-compose up --build
 | 每秒请求数  | rate(flask_http_request_total[1m])          |
 | 错误率    | rate(flask_http_request_errors_total[1m])   |
 
-或者导入社区 Dashboard（ID： 4701 或 11074 等）。
+或者导入社区 Dashboard（ID： 9688、4701、11074 等）。
+或在社区搜索：https://grafana.com/grafana/dashboards/?search=Flask
